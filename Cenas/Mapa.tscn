@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m27c5"]
 size = Vector2(123.392, 121.905)
 
-[node name="Mapa" type="Node2D"]
+[node name="Mapa1" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(61, 209)
@@ -31,14 +31,15 @@ position = Vector2(0.255991, -10.1587)
 shape = SubResource("RectangleShape2D_m27c5")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(664, 340)
+position = Vector2(691, 272)
 scale = Vector2(1.95313, 0.492188)
 texture = ExtResource("1_ih0g2")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D3"]
+position = Vector2(-2.04799, -56.8888)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D3/StaticBody2D"]
-position = Vector2(0.255991, -10.1587)
+position = Vector2(3.07198, 50.7936)
 shape = SubResource("RectangleShape2D_m27c5")
 
 [node name="cena-player" parent="." instance=ExtResource("2_djfi6")]
