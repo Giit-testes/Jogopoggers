@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2x2rq4vyv7p1"]
+
+[ext_resource type="Texture2D" uid="uid://bafp1if55kuhg" path="res://icon.svg" id="1_5jt5w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d8spr"]
+size = Vector2(124, 119)
+
+[node name="cena-player" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_5jt5w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_d8spr")
